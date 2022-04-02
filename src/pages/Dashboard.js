@@ -140,11 +140,11 @@ function Projects() {
                             return (
                                 
                                 <Grid.Column >
-                                {/* <Link to={{
-                                    pathname: "/payment",
-                                    state: {id: project.project_id}
-                                }} > */}
-                                    <Card raised >
+                                <Link to={{
+                                    pathname: "/singlepost",
+                                    state: {data: project}
+                                }} >
+                                    <Card raised fluid>
                                         <Image src={"https://ipfs.io/ipfs/" + project.image} wrapped ui={false} />
                                         <Card.Content>
                                         <Card.Header>{project.title}</Card.Header>
@@ -160,7 +160,7 @@ function Projects() {
                                         </a>
                                         </Card.Content>
                                     </Card>
-                                    {/* </Link> */}
+                                    </Link>
                                 </Grid.Column>
                                 
                             )

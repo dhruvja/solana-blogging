@@ -47,7 +47,7 @@ function Vaultbar(props) {
     <div>
       <Segment inverted>
         <Menu inverted pointing secondary stackable>
-          <Menu.Item header>Crowd Funding Platform</Menu.Item>
+          <Menu.Item header>On Chain Blog Platform</Menu.Item>
           <Link to="/upload">
             <Menu.Item
               name="Host"
